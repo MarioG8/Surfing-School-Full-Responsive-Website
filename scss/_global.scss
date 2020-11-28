@@ -19,6 +19,24 @@ body.active {
   width: 100%;
   height: 10000px;
 }
-nav {
-  position: sticky;
+
+.button {
+  padding: 1rem 3rem;
+  border: none;
+  background: $color_one-light;
+  color: $color_three;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+
+  &:hover {
+    background: $color_three;
+    color: $color_one;
+    border: solid 1px $color_one;
+    transform: scale(0.95);
+  }
 }
