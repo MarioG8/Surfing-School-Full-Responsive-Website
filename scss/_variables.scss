@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Kaushan+Script&family=Mr+Dafoe&family=Nosifer&family=Poppins:wght@400;500;700&family=Rammetto+One&family=Shojumaru&family=Special+Elite&family=Yesteryear&display=swap");
+
+// fonts
+
+$font_one: "Arizonia", cursive;
+$font-two: "Kaushan Script", cursive;
+$font-three: "Mr Dafoe", cursive;
+$font-four: "Nosifer", cursive;
+$font-five: "Poppins", sans-serif;
+$font-six: "Rammetto One", cursive;
+$font-seven: "Shojumaru", cursive;
+$font-eight: "Special Elite", cursive;
+$font-nine: "Yesteryear", cursive;
+
+//Colors
+$color_one: rgb(249, 3, 47);
+$color_two: rgb(1, 146, 145);
+$color_three: rgb(255, 255, 255);
+
+// Media quarries Max-Width
+@mixin m_q($size) {
+  @media screen and (max-width: $size) {
+    @content;
+  }
+}
+
+// Mixins
+@mixin flexBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// // Media Quarries
+// $breakpoints: (
+//   xs: 400px,
+//   sm: 699px,
+//   md: 768px,
+//   lg: 1000px,
+//   xlg: 1300px,
+// );
+
+// @mixin breakpoint($size) {
+//   $breakpoint-value: map-get($breakpoints, $size);
+//   @media screen and (min-width: $breakpoint-value) {
+//     @content;
+//   }
+// }
+
+// @mixin breakpoint_mw($size) {
+//   $breakpoint-value: map-get($breakpoints, $size);
+//   @media screen and (max-width: $breakpoint-value) {
+//     @content;
+//   }
+// }

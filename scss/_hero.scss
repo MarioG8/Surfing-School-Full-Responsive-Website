@@ -1,0 +1,21 @@
+.hero {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    url("/img/background_002.jpg");
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__content {
+    color: $color_three;
+    // padding: 3rem 1rem;
+    line-height: 1;
+
+    h1 {
+      font-size: clamp(2.5rem, 4vw, 5rem);
+    }
+  }
+}
