@@ -1,0 +1,44 @@
+.services {
+  padding: 8rem calc((100vw - 1200px) / 2);
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    @include m_q(768px) {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .topline {
+    font-size: 1.5rem;
+    color: $color_one;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+  }
+  &__heading {
+    margin-bottom: 2.5rem;
+    font-size: clamp(2rem, 6vw, 3rem);
+  }
+
+  &__features {
+    list-style-type: none;
+  }
+
+  &__feature {
+    margin-bottom: 1.8rem;
+    font-size: clamp(1.3rem, 5vw, 1.4rem);
+  }
+
+  .fa-check-square {
+    margin-right: 0.5rem;
+    color: $color_one;
+  }
+}

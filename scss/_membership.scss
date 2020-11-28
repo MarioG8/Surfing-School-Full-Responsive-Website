@@ -1,0 +1,60 @@
+.membership {
+  background: $color_four;
+  color: $color_three;
+  padding: 6rem calc((100vw - 1100px) / 2);
+  text-align: center;
+
+  h1 {
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 5vw, 3rem);
+    padding: 0 1rem;
+  }
+  &__desc {
+    margin-bottom: 3rem;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    padding: 1rem;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    @include m_q(1100px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__card {
+    padding: 2rem;
+    min-height: 450px;
+    width: 325px;
+    background-color: $color_three;
+    color: $color_two;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include m_q(1100px) {
+      width: 50%;
+      height: 50%;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: clamp(1rem, 5vw, 2rem);
+      margin-bottom: 2rem;
+    }
+  }
+  &__perks {
+    min-height: 200px;
+  }
+  .card-icon {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: $color_one;
+  }
+}
