@@ -1,6 +1,8 @@
 .navbar {
-  position: relative;
-  opacity: 0.9;
+  width: 100%;
+  position: fixed;
+  opacity: 0.87;
+  z-index: 999;
   background: $color_two;
   height: 60px;
   padding: 0.5rem calc((100vw - 1200px) / 2);
@@ -38,7 +40,7 @@
 
       &.active {
         top: 100%;
-        opacity: 0.9;
+        opacity: 0.97;
         z-index: 99;
         height: 100vh;
         font-size: 1.5rem;
