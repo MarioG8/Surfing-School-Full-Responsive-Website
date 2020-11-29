@@ -1,16 +1,23 @@
 .hero {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
     url("/img/background_002.jpg");
   height: 100vh;
-  background-position: center center;
+  background-repeat: no-repeat;
+  background-position: top;
   background-size: cover;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.8);
   padding: 0.5rem calc((100vw - 1200px) / 2);
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.8);
+  @include m_q(899px) {
+    background-position-x: 35%;
+  }
 
   &__content {
+    position: relative;
+    top: -10%;
+    left: 0%;
     color: $color_three;
     padding: 3rem 1.3rem;
     line-height: 1;
@@ -19,6 +26,16 @@
       font-size: clamp(3rem, 8vw, 7rem);
       text-transform: uppercase;
       margin-bottom: 0.5rem;
+      font-weight: bold;
+      @include m_q(500px) {
+        font-size: 2.75rem;
+      }
+
+      span {
+        font-weight: normal;
+        text-transform: none;
+        font-family: $font-four;
+      }
     }
     p {
       font-size: clamp(1rem, 3vw, 2.5rem);

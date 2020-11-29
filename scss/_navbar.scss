@@ -1,7 +1,7 @@
 .navbar {
   width: 100%;
   position: fixed;
-  opacity: 0.87;
+  opacity: 0.9;
   z-index: 999;
   background: $color_two;
   height: 60px;
@@ -21,6 +21,8 @@
 
     span {
       font-weight: normal;
+      text-transform: none;
+      font-family: $font-four;
     }
   }
 

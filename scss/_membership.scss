@@ -1,5 +1,17 @@
 .membership {
-  background: $color_four;
+  background: #4da0b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #d39d38,
+    #4da0b0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #d39d38,
+    #4da0b0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  box-shadow: 3px 5px 33px rgba(0, 0, 0, 0.8);
   color: $color_three;
   padding: 6rem calc((100vw - 1100px) / 2);
   text-align: center;
@@ -28,16 +40,17 @@
     padding: 2rem;
     min-height: 450px;
     width: 325px;
-    background-color: $color_three;
-    color: $color_two;
+    max-width: 400px;
+    color: $color_three;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 3px 5px 33px rgba(0, 0, 0, 0.8);
     @include m_q(1100px) {
-      width: 50%;
-      height: 50%;
-      margin-bottom: 1.5rem;
+      width: 75%;
+      height: 75%;
+      margin-bottom: 3rem;
     }
 
     p {
@@ -55,6 +68,51 @@
   .card-icon {
     font-size: 3rem;
     margin-bottom: 2rem;
-    color: $color_one;
+    // color: $color_three;
+  }
+
+  .card-one {
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.1)
+      ),
+      url("/img/desk_002.jpg");
+    // height: 100vh;
+    background-position: center center;
+    background-size: cover;
+
+    .card-icon {
+      color: $color-two-dark;
+    }
+  }
+  .card-two {
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.1)
+      ),
+      url("/img/desk_001.jpg");
+    // height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    .card-icon {
+      color: $color-five;
+    }
+  }
+  .card-three {
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.1)
+      ),
+      url("/img/deks_003.jpg");
+    // height: 100vh;
+    background-position: center center;
+    background-size: cover;
+
+    .card-icon {
+      color: $color-six;
+    }
   }
 }
