@@ -17,10 +17,17 @@ $color_one: rgb(255, 0, 0);
 $color_one-light: rgb(185, 45, 45);
 $color_two: rgb(1, 146, 145);
 $color_two-dark: rgb(0, 79, 100);
+$color_two-light: rgb(2, 184, 234);
 $color_three: rgb(255, 255, 255);
 $color_four: rgb(0, 0, 0);
 $color_five: rgb(192, 192, 192);
 $color_six: rgb(255, 215, 0);
+$color_seven: rgb(248, 107, 1);
+$color_seven-light: rgb(254, 171, 53);
+$color_seven-dark: rgb(234, 62, 0);
+$color_eight: rgb(237, 182, 0);
+$color_nine: rgb(13, 190, 121);
+$color_ten: rgb(33, 156, 76);
 
 // Media quarries Max-Width
 @mixin m_q($size) {
@@ -36,25 +43,15 @@ $color_six: rgb(255, 215, 0);
   align-items: center;
 }
 
-// // Media Quarries
-// $breakpoints: (
-//   xs: 400px,
-//   sm: 699px,
-//   md: 768px,
-//   lg: 1000px,
-//   xlg: 1300px,
-// );
-
-// @mixin breakpoint($size) {
-//   $breakpoint-value: map-get($breakpoints, $size);
-//   @media screen and (min-width: $breakpoint-value) {
-//     @content;
-//   }
-// }
-
-// @mixin breakpoint_mw($size) {
-//   $breakpoint-value: map-get($breakpoints, $size);
-//   @media screen and (max-width: $breakpoint-value) {
-//     @content;
-//   }
-// }
+@mixin animate-bounce {
+  transition: all 0.35s cubic-bezier(0.31, -0.205, 0.43, 1.8);
+}
+// Glitchy icons
+$btn-size: 50px;
+$colors: (
+  "facebook": #3b5998,
+  "twitter": #3cf,
+  "youtube": #c4302b,
+  "instagram": #e95950,
+  "pinterest": #d41610,
+);

@@ -14,6 +14,68 @@ const mobileMenu = () => {
 
 menu.addEventListener('click', mobileMenu);
 
+// Animations 
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from('.ani-hero', {
+    duration: 0.8,
+    opacity: 0,
+    y: -330,
+    stagger: 0.5
+
+});
+
+gsap.from('.ani-services', {
+    scrollTrigger: '.ani-services',
+    duration: 0.5,
+    opacity: 1,
+    x: -200,
+    stagger: 0.12
+});
+
+gsap.from('.ani-img', {
+    scrollTrigger: '.services',
+    duration: 1.2,
+    opacity: 0,
+    x: 200
+});
+
+gsap.from('.ani-mem', {
+    scrollTrigger: '.membership',
+    duration: 1,
+    opacity: 0,
+    y: -200,
+    stagger: 0.3,
+    delay: 0.5
+});
+
+gsap.from('.ani-card', {
+    scrollTrigger: '.membership__wrapper',
+    duration: 1,
+    opacity: 0,
+    y: -200,
+    stagger: 0.2,
+    delay: 0.3
+});
+
+gsap.from('.ani-team', {
+    scrollTrigger: '.team',
+    duration: 1,
+    opacity: 0,
+    y: -200,
+    stagger: 0.3,
+    delay: 0.2
+});
+
+gsap.from('.ani-contact', {
+    scrollTrigger: '.contact',
+    duration: 0.8,
+    opacity: 0,
+    y: -200,
+    stagger: 0.25,
+    delay: 0.8
+});
+
 
 // Close menu after click link or resize window 
 const hideMobileMenu = () => {
@@ -26,3 +88,4 @@ const hideMobileMenu = () => {
 
 menuLinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
+

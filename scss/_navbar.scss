@@ -17,12 +17,13 @@
     text-transform: uppercase;
     font-weight: 700;
     padding-left: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 
     span {
       font-weight: normal;
       text-transform: none;
       font-family: $font-four;
+      color: $color_one-light;
     }
   }
 
@@ -61,13 +62,15 @@
   }
   &__link:hover {
     text-decoration: underline;
+    font-weight: bold;
+    color: $color_seven;
   }
 
   .navbar__toggle .bar {
     @include m_q(768px) {
-      width: 25px;
+      width: 38px;
       height: 3px;
-      margin: 5px auto;
+      margin: 7px auto;
       transition: all 0.5s ease-in-out;
       background-color: $color_three;
       display: block;
@@ -82,13 +85,15 @@
       transform: translate(5%, 20%);
 
       &.is-active .bar:nth-child(2) {
-        opacity: 0;
+        // opacity: 0;
+        transform: translateX(-60px);
+        background: transparent;
       }
       &.is-active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+        transform: translateY(10px) rotate(45deg);
       }
       &.is-active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-10px) rotate(-45deg);
       }
     }
   }

@@ -18,7 +18,7 @@
 
   h1 {
     margin-bottom: 1rem;
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: clamp(3rem, 5vw, 3rem);
     padding: 0 1rem;
   }
   &__desc {
@@ -36,32 +36,7 @@
       align-items: center;
     }
   }
-  &__card {
-    padding: 2rem;
-    min-height: 450px;
-    width: 325px;
-    max-width: 400px;
-    color: $color_three;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 3px 5px 33px rgba(0, 0, 0, 0.8);
-    @include m_q(1100px) {
-      width: 75%;
-      height: 75%;
-      margin-bottom: 3rem;
-    }
 
-    p {
-      margin-bottom: 1rem;
-    }
-
-    h3 {
-      font-size: clamp(1rem, 5vw, 2rem);
-      margin-bottom: 2rem;
-    }
-  }
   &__perks {
     min-height: 200px;
   }
@@ -83,9 +58,13 @@
     background-size: cover;
 
     .card-icon {
-      color: $color-two-dark;
+      color: $color-nine;
+    }
+    h3 {
+      color: $color-nine;
     }
   }
+
   .card-two {
     background: linear-gradient(
         to right,
@@ -97,6 +76,9 @@
     background-position: center center;
     background-size: cover;
     .card-icon {
+      color: $color-five;
+    }
+    h3 {
       color: $color-five;
     }
   }
@@ -112,7 +94,11 @@
     background-size: cover;
 
     .card-icon {
-      color: $color-six;
+      color: $color-eight;
+    }
+
+    h3 {
+      color: $color-eight;
     }
   }
 }

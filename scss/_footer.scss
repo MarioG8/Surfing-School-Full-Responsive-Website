@@ -1,16 +1,16 @@
 .footer {
-  padding: 5rem calc((100vw - 1100px) / 2);
+  padding: 3.3rem calc((100vw - 1100px) / 2);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   color: $color_three;
   background: #141e30; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to left,
+    to bottom,
     #243b55,
     #141e30
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to left,
+    to bottom,
     #243b55,
     #141e30
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -29,6 +29,7 @@
 
       span {
         font-family: $font-four;
+        color: $color-one-light;
       }
     }
 
@@ -71,6 +72,6 @@
     transition: all 0.2s ease-in-out;
   }
   &__link:hover {
-    color: $color_one-light;
+    color: $color_two-light;
   }
 }

@@ -1,0 +1,77 @@
+.socket {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.4) 35%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    url("/img/backround_006.jpg") no-repeat top;
+  background-size: cover;
+  box-shadow: 3px 9px 50px rgba(15, 11, 11, 0.9);
+
+  h2 {
+    margin-top: 3.5rem;
+    color: #fff;
+    text-align: center;
+  }
+  a {
+    list-style: none;
+    text-decoration: none;
+  }
+}
+
+.glitchy_social {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 33.33%;
+  text-align: center;
+
+  .btn {
+    display: inline-block;
+    width: $btn-size;
+    height: $btn-size;
+    position: relative;
+
+    .fab {
+      color: $color_three;
+      font-size: 3rem;
+      line-height: $btn-size;
+    }
+
+    &:focus .fab,
+    &:hover .fab {
+      animation: glitchy 200ms infinite;
+    }
+  }
+  a:not(:last-child) {
+    margin-right: 75px;
+    @include m_q(650px) {
+      margin-right: 30px;
+    }
+    @include m_q(399) {
+      margin-right: 0px;
+    }
+  }
+}
+
+@keyframes glitchy {
+  0% {
+    text-shadow: 5px 4px #f44336, -5px -6px #2196f3;
+  }
+  25% {
+    text-shadow: -5px -6px #f44336, 5px 4px #2196f3;
+  }
+  50% {
+    text-shadow: 5px -4px #f44336, -8px 4px #2196f3;
+  }
+  75% {
+    text-shadow: -8px -4px #f44336, -5px -4px #2196f3;
+  }
+  100% {
+    text-shadow: -5px 0 #f44336, 5px -4px #2196f3;
+  }
+}
