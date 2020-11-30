@@ -2,7 +2,7 @@
 const body = document.querySelector('body');
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
-const navLogo = document.querySelector('#navbar__logo');
+const navLogo = document.querySelector('.navbar__logo');
 
 // Display Mobile Menu
 
@@ -50,10 +50,10 @@ gsap.from('.ani-mem', {
 });
 
 gsap.from('.ani-card', {
-    scrollTrigger: '.membership__wrapper',
+    scrollTrigger: '#membership',
     duration: 1,
     opacity: 0,
-    y: -200,
+    y: -300,
     stagger: 0.2,
     delay: 0.3
 });
@@ -84,7 +84,7 @@ const hideMobileMenu = () => {
         menu.classList.toggle('is-active');
         menuLinks.classList.remove('active');
     }
-}
+};
 
 menuLinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
