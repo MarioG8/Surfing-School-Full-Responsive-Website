@@ -62,6 +62,7 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: all 0.3s ease-in-out;
   box-shadow: 3px 5px 33px rgba(0, 0, 0, 0.8);
   @include m_q(1100px) {
     width: 75%;
@@ -79,9 +80,10 @@ form {
   }
 
   &:hover {
-    transform: scale(1.03);
-    opacity: 0.7;
-    background-color: rgba(0, 0, 0, 0.5);
+    // transform: scale(1.03);
+    // opacity: 0.7;
+    box-shadow: 2px 3px 20px rgba(255, 255, 255, 0.5);
+    // background-color: rgba(0, 0, 0, 0.5);
     // Turn off ani-card gasp effect if you wont this scale animations.active
   }
 }
