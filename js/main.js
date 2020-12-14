@@ -53,7 +53,7 @@ gsap.from('.ani-card', {
     scrollTrigger: '#membership',
     duration: 1,
     opacity: 0,
-    y: -300,
+    y: -200,
     stagger: 0.2,
     delay: 0.3
 });
