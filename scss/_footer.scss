@@ -3,18 +3,17 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   color: $color_three;
-  background: #141e30; /* fallback for old browsers */
+  background: #141e30; 
   background: -webkit-linear-gradient(
     to bottom,
     #243b55,
     #141e30
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  );
   background: linear-gradient(
     to bottom,
     #243b55,
     #141e30
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  box-shadow: 3px -1px 60px rgba(0, 0, 0, 0.95);
+  );
 
   &__desc {
     padding: 0 2rem;
