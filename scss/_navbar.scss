@@ -82,7 +82,6 @@
       transform: translate(5%, 20%);
 
       &.is-active .bar:nth-child(2) {
-        // opacity: 0;
         transform: translateX(-60px);
         background: transparent;
       }
