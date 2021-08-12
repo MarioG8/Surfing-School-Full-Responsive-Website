@@ -16,7 +16,7 @@
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
-    padding-left: 1rem;
+    padding-left: 2rem;
     font-size: 1.7rem;
 
     span {
@@ -50,17 +50,22 @@
   }
 
   &__link {
+    background-image: linear-gradient(90deg, $color_seven, $color_five);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 300ms ease-out;
     color: $color_three;
     text-decoration: none;
-    padding: 2.5rem 1rem 0;
+    padding: 2rem 1rem 1rem;
+    margin-right: 1.5rem;
     @include m_q(768px) {
       @include flexBox;
     }
   }
+
   &__link:hover {
-    text-decoration: underline;
-    font-weight: bold;
-    color: $color_seven;
+    background-size: 100% 3px;
   }
 
   .navbar__toggle .bar {
